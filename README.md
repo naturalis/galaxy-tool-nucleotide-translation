@@ -23,3 +23,8 @@ sudo ln -s /home/galaxy/Tools/galaxy-tool-nucleotide-translation/translatenucleo
 sudo ln -s /home/galaxy/Tools/galaxy-tool-nucleotide-translation/translatenucleotide.sh /home/galaxy/galaxy/tools/identify/translatenucleotide.sh
 sudo ln -s /home/galaxy/Tools/galaxy-tool-nucleotide-translation/translatenucleotide.xml /home/galaxy/galaxy/tools/identify/translatenucleotide.xml
 ```
+Add the following line to /home/galaxy/galaxy/config/tool_conf.xml
+```
+<tool file="identify/translatenucleotide.xml" />
+```
+Restart Galaxy to see the tool in the menu
