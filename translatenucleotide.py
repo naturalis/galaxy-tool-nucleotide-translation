@@ -48,8 +48,17 @@ def translate():
                 find_stop_codons(writeLine)
                 writeLine = {}
     #return sequences
-
+def write_output_header():
+    with open(args.output, "a") as output:
+        if args.setting == "seqonly":
+            output.write("#Seq ID\t#Frame 1\t#Frame 2\t#Frame 3\t#Frame -1\t#Frame -2\t#Frame -3\n")
+        elif args.setting == "countonly":
+            output.write("#Seq ID\t#Frame 1 stop codons\t#Frame 2 stop codons\t#Frame 3 stop codons\t#Frame -1 stop codons\t#Frame -2 stop codons\t#Frame -3 stop codons\n")
+        elif args.setting == "seqandcount":
+            output.write("#Seq ID\t#Frame 1 stop codons\t#Frame 2 stop codons\t#Frame 3 stop codons\t#Frame -1 stop codons\t#Frame -2 stop codons\t#Frame -3 stop codons\t#Frame 1\t#Frame 2\t#Frame 3\t#Frame -1\t#Frame -2\t#Frame -3\n")
+    
 def main():
+    write_output_header()
     translate()
 
 if __name__ == '__main__':
