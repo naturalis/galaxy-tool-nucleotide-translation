@@ -1,0 +1,58 @@
+<tool id="translator" name="Translate nucleotide sequences">
+<description>EMBOSS transeq</description>
+<command interpreter="bash">
+translatenucleotide.sh
+$input
+$output
+$setting
+$table
+</command>
+
+<inputs>
+<param format="fasta" name="input" type="data" label="fasta file"/>
+
+				<param name="setting" type="select" multiple="false" label="output type">
+					<option value="seqonly">Translation of 6 frames</option>
+					<option value="countonly">Amount of stop codons per frame for all 6 frames</option>
+          <option value="seqandcount" selected="true">Stop codon counts and tranlated sequences of all 6 frames</option>
+				</param>
+        <param name="table" type="select" multiple="false" label="Transaltion table">
+					<option value="0">Standard</option>
+          <option value="1">Standard (with alternative initiation codons)</option>
+          <option value="2">Vertebrate Mitochondrial</option>
+          <option value="3">Yeast Mitochondrial</option>
+          <option value="4">Mold, Protozoan,Coelenterate Mitochondrial and Mycoplasma/Spiroplasma</option>
+          <option value="5">Invertebrate Mitochondrial</option>
+          <option value="6">Ciliate Macronuclear and Dasycladacean</option>
+          <option value="9">Echinoderm Mitochondrial</option>
+          <option value="10">Euplotid Nuclear</option>
+          <option value="11">Bacterial</option>
+          <option value="12">Alternative Yeast Nuclear</option>
+          <option value="13">Ascidian Mitochondrial</option>
+          <option value="14">Flatworm Mitochondrial</option>
+          <option value="15">Blepharisma Macronuclear</option>
+          <option value="16">Chlorophycean Mitochondrial</option>
+          <option value="21">Trematode Mitochondrial</option>
+          <option value="22">Scenedesmus obliquus</option>
+          <option value="23">Thraustochytrium Mitochondrial</option>
+
+				</param>
+
+</inputs>
+
+
+<outputs>
+	<data format="zip" type="data" name="output_zip" label="$input.display_name zip" />
+	<data format="txt" name="output_log" label="$input.display_name log" />
+
+</outputs>
+<tests>
+<test>
+<param name="test_input" value="test_input.txt"/>
+<output name="test_outout" file="test_output.txt"/>
+</test>
+</tests>
+<help>
+Merge sequences
+</help>
+</tool>
