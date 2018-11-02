@@ -17,7 +17,7 @@ $table
           <option value="seqandcount" selected="true">Stop codon counts and tranlated sequences of all 6 frames</option>
 				</param>
         <param name="table" type="select" multiple="false" label="Transaltion table">
-					<option value="0">Standard</option>
+					<option value="0" selected="true">Standard</option>
           <option value="1">Standard (with alternative initiation codons)</option>
           <option value="2">Vertebrate Mitochondrial</option>
           <option value="3">Yeast Mitochondrial</option>
@@ -42,8 +42,7 @@ $table
 
 
 <outputs>
-	<data format="zip" type="data" name="output_zip" label="$input.display_name zip" />
-	<data format="txt" name="output_log" label="$input.display_name log" />
+	<data format="tabular" type="data" name="output" label="$input.display_name translated" />
 
 </outputs>
 <tests>
