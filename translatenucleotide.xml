@@ -5,7 +5,7 @@
 	<requirement type="package">biopython</requirement>
 	<requirement type="package" version="6.6.0">emboss</requirement>
 </requirements>
-<command interpreter="bash">
+<command>
 <![CDATA[
 bash '$__tool_directory__/translatenucleotide.sh'
 $input
