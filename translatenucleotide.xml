@@ -1,5 +1,7 @@
 <tool id="translator" name="Translate nucleotide sequences">
+<!--
 <description>EMBOSS transeq</description>
+-->
 <requirements>
     <requirement type="package" version="2.7">python</requirement>
 	<requirement type="package">biopython</requirement>
@@ -59,6 +61,18 @@ $table
 </test>
 </tests>
 <help>
-Merge sequences
+EMBOSS transeq
 </help>
+<citations>
+   <citation type="bibtex">@article{rice2000emboss,
+  title={EMBOSS: the European molecular biology open software suite},
+  author={Rice, Peter and Longden, Ian and Bleasby, Alan},
+  journal={Trends in genetics},
+  volume={16},
+  number={6},
+  pages={276--277},
+  year={2000},
+  publisher={Elsevier}
+}</citation>
+ </citations>
 </tool>
