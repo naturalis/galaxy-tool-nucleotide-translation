@@ -1,4 +1,8 @@
 #!/usr/bin/python
+
+# This script is compatible with Python3
+# Tested with 2to3; no changes made
+
 from Bio import SeqIO
 import argparse
 

@@ -1,9 +1,12 @@
 <tool id="translator" name="Translate nucleotide sequences">
+
+<!-- "This xml now makes use of python3"-->
+
 <!--
 <description>EMBOSS transeq</description>
 -->
 <requirements>
-    <requirement type="package" version="2.7">python</requirement>
+    <requirement type="package" version="3.7.0">python</requirement>
 	<requirement type="package">biopython</requirement>
 	<requirement type="package" version="6.6.0">emboss</requirement>
 </requirements>
