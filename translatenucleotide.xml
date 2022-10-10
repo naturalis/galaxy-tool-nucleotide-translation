@@ -6,9 +6,9 @@
 <description>EMBOSS transeq</description>
 -->
 <requirements>
-    <requirement type="package" version="3.7.0">python</requirement>
-	<requirement type="package">biopython</requirement>
 	<requirement type="package" version="6.6.0">emboss</requirement>
+	<requirement type="package" version="3.9.0">python</requirement>
+	<requirement type="package" version="1.79">biopython</requirement>
 </requirements>
 <command>
 <![CDATA[

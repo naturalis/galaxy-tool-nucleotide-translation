@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # This script is compatible with Python3
 # Tested with 2to3; no changes made
