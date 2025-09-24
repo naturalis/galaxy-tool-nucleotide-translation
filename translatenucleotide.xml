@@ -1,4 +1,4 @@
-<tool id="translator" name="Translate nucleotide sequences">
+<tool id="translator" name="Translate nucleotide sequences" version="1.0">
 
 <!-- "This xml now makes use of python3"-->
 
