@@ -1,0 +1,13 @@
+name: naturalis_translate_nucleotide
+owner:  luka
+description: "Translate nucleotide sequences and count stop codons" 
+long_description: |
+  "Translate nucleotide sequences and count stop codons".
+remote_repository_url: https://github.com/naturalis/galaxy-tool-nucleotide-translation.git
+homepage_url: https://github.com/naturalis/galaxy-tool-nucleotide-translation.git
+type: unrestricted
+categories:
+   - "Sequence Analysis"
+auto_tool_repositories:
+  name_template: naturalis_translate_nucleotide
+  description_template: naturalis_translate_nucleotide
